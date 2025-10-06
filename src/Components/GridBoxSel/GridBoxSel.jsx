@@ -16,7 +16,10 @@ const GridBoxSel = () => {
       </section>
       <div className="GridBoxSel-div">
         <Container>
-          <Row className="g-4">
+          <Row
+            className="g-5"
+            style={{ display: "flex", justifyContent: "center" }}
+          >
             {/* Card 1 */}
             <Col md={4}>
               <div className="glass-card">
@@ -24,8 +27,7 @@ const GridBoxSel = () => {
                   <img
                     src="/Assets/payment1.svg"
                     alt="payment illustration"
-                    className="card-icon"
-                    width={370}
+                    className="card-icon img-fluid"
                   />
                 </div>
                 <div className="mt-4">
@@ -42,7 +44,7 @@ const GridBoxSel = () => {
             </Col>
 
             {/* Card 2 */}
-            <Col md={6}>
+            <Col md={7}>
               <div className="glass-card">
                 <p className="cardHeading-Sel">Faster Processing Time</p>
                 <p className="cardMainTitle-sel">
@@ -52,12 +54,26 @@ const GridBoxSel = () => {
                 <Button variant="light" className="glass-btn">
                   Learn more →
                 </Button>
+                <div className="icons-algin" style={{ marginTop: "26px" }}>
+                  <img
+                    src="/Assets/payment2.svg"
+                    alt="payment illustration"
+                    className="card-icon img-fluid"
+                  />
+                </div>
               </div>
             </Col>
 
             {/* Card 3 */}
-            <Col md={6}>
+            <Col md={7}>
               <div className="glass-card">
+                <div className="icons-algin" style={{ marginBottom: "26px" }}>
+                  <img
+                    src="/Assets/payment3.svg"
+                    alt="payment illustration"
+                    className="card-icon img-fluid"
+                  />
+                </div>
                 <p className="cardHeading-Sel">Flexible Solutions</p>
                 <p className="cardMainTitle-sel">
                   Customizable options to meet the unique needs of your
@@ -70,7 +86,7 @@ const GridBoxSel = () => {
             </Col>
 
             {/* Card 4 */}
-            <Col md={6}>
+            <Col md={4}>
               <div className="glass-card">
                 <p className="cardHeading-Sel">Effortless Integration</p>
                 <p className="cardMainTitle-sel">
@@ -80,6 +96,13 @@ const GridBoxSel = () => {
                 <Button variant="light" className="glass-btn">
                   Learn more →
                 </Button>
+                <div className="icons-algin" style={{ marginTop: "26px" }}>
+                  <img
+                    src="/Assets/payment4.svg"
+                    alt="payment illustration"
+                    className="card-icon img-fluid"
+                  />
+                </div>
               </div>
             </Col>
           </Row>
