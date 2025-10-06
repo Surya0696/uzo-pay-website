@@ -21,13 +21,13 @@ const GridBoxSel = () => {
             <Col md={4}>
               <div className="glass-card">
                 <div className="icons-algin">
-                <img
-                  src="/Assets/payment1.svg"
-                  alt="payment illustration"
-                  className="card-icon"
-                  width={370}
+                  <img
+                    src="/Assets/payment1.svg"
+                    alt="payment illustration"
+                    className="card-icon"
+                    width={370}
                   />
-                  </div>
+                </div>
                 <div className="mt-4">
                   <p className="cardHeading-Sel">Optimize customer journeys</p>
                   <p className="cardMainTitle-sel">
