@@ -1,0 +1,30 @@
+.SubHero {
+  text-align: center;
+  background-color: #010203;
+  padding: 30px;
+}
+
+.SubHeroMainTitle {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  background: linear-gradient(
+    93.85deg,
+    #ffffff 39.79%,
+    rgba(255, 255, 255, 0) 65.29%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.SubHeroSubTitle {
+  font-size: 50px;
+  font-weight: 500;
+  background: linear-gradient(
+    93.85deg,
+    #ffffff 39.79%,
+    rgba(255, 255, 255, 0) 82.29%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

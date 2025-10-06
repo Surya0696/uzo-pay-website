@@ -1,0 +1,35 @@
+.card {
+  background: #0a0a0a !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 10px 10px 60px 10px;
+  padding: 30px;
+  width: 300px;
+  min-height: 300px;
+  color: #ffffff !important;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+.icon {
+  text-align: center;
+}
+
+.icon img {
+  height: 100%;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.card .arrow {
+  position: absolute;
+  bottom: 6px;
+  right: 44px;
+  font-size: 22px;
+  opacity: 0.6;
+  color: #b588ff80;
+}

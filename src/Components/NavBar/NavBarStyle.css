@@ -1,0 +1,57 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 24px;
+  background-color: #010203;
+  color: #f9f8fc;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.navLinks {
+  display: flex;
+  gap: 30px;
+}
+
+.navLinks h4 {
+  font-weight: 400;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navLinks h4:hover {
+  color: #38bdf8;
+}
+
+.authButtons {
+  display: flex;
+  gap: 12px;
+}
+
+.loginBtn {
+  background: transparent;
+  border: none;
+  color: #f9f8fc;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.signupBtn {
+  background: transparent;
+  border: 1px solid #f9f8fc;
+  border-radius: 20px;
+  padding: 6px 14px;
+  color: #f9f8fc;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.signupBtn:hover {
+  background-color: #f9f8fc;
+  color: #000;
+}

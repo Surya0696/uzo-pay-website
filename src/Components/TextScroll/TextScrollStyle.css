@@ -1,0 +1,17 @@
+.TextScrollDiv {
+  background-color: #010203;
+  padding: 50px;
+}
+
+.txtScroll {
+  font-size: 90px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.txtScroll span {
+  display: inline-block;
+  opacity: 0;
+  text-shadow: 0 0 5px #b388ff, 0 0 10px #b388ff, 0 0 20px #b388ff,
+    0 0 40px #b388ff;
+}

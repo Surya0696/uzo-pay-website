@@ -1,0 +1,29 @@
+.GridBoxSel-div {
+  background-color: black;
+}
+.icons-algin {
+  text-align: center;
+}
+.glass-card {
+  border: 1px solid #ffffff26;
+  padding: 20px 20px 50px 20px;
+  border-radius: 40px;
+}
+.cardHeading-Sel {
+  background: linear-gradient(
+    91.35deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0) 103.32%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 18px;
+  font-weight: 600;
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+}
+
+.cardMainTitle-sel {
+  color: #ffffff99;
+  font-weight: 400;
+  font-size: 16px;
+}
