@@ -9,6 +9,7 @@ import PaymentGateway from "./Components/PaymentGateway/PaymentGateway";
 import PayoutSection from "./Components/PayoutSection/PayoutSection";
 import QuickStart from "./Components/QuickStart/QuickStart";
 import SubHero from "./Components/SubHero/SubHero";
+import TestMonialSection from "./Components/TestMonialSection/TestMonialSection";
 import TextScroll from "./Components/TextScroll/TextScroll";
 
 function App() {
@@ -24,6 +25,8 @@ function App() {
       <QuickStart />
       <PaymentGateway />
       <FnanceSel />
+      <TestMonialSection />
+
       <Footer />
     </div>
   );
