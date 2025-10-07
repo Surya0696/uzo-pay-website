@@ -162,10 +162,10 @@ const TestMonialSection = () => {
             <div className="section-badge">
               <span>Client Feedbacks</span>
             </div>
-            <h2 className="section-title">
+            <h2 className="section-title" style={{ color: "#C2C4C8" }}>
               Trusted by
               <br />
-              <span className="highlight-text">Businesses Like Yours</span>
+              <p>Businesses Like Yours</p>
             </h2>
           </Col>
         </Row>
@@ -201,8 +201,6 @@ const TestMonialSection = () => {
               >
                 <span>‹</span>
               </button>
-
-          
 
               <button
                 className="nav-btn next-btn"

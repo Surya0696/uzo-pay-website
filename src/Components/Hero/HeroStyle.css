@@ -1,11 +1,17 @@
 .hero {
   text-align: center;
-  padding: 120px 30px;
+  padding: 100px 30px;
   background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* full screen */
 }
 
 .heroTitle {
   font-size: 68px;
+  line-height: 1.2;
   text-align: center;
   margin-bottom: 20px;
   background: linear-gradient(
@@ -21,6 +27,7 @@
   font-size: 1.2rem;
   color: #ccc;
   margin-bottom: 40px;
+  max-width: 700px;
 }
 
 .exploreBtn {
@@ -43,4 +50,63 @@
   margin-top: 30px;
   font-size: 0.9rem;
   color: #aaa;
+  max-width: 600px;
+}
+
+/* ===================== Responsive ===================== */
+@media (max-width: 1024px) {
+  .heroTitle {
+    font-size: 48px;
+  }
+
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+
+  .exploreBtn {
+    padding: 10px 24px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .heroTitle {
+    font-size: 36px;
+  }
+
+  .heroSubtitle {
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+  }
+
+  .heroFooter {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 60px 15px;
+  }
+
+  .heroTitle {
+    font-size: 28px;
+  }
+
+  .heroSubtitle {
+    font-size: 0.9rem;
+  }
+
+  .exploreBtn {
+    padding: 8px 20px;
+    font-size: 0.85rem;
+  }
+
+  .heroFooter {
+    font-size: 0.75rem;
+  }
 }

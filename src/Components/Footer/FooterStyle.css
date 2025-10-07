@@ -71,3 +71,15 @@
 .scroll-top-btn:hover {
   background: #444;
 }
+
+.footer-social a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 18px;
+  color: #bbb;
+  transition: color 0.2s;
+}
+
+.footer-social a:hover {
+  color: white;
+}

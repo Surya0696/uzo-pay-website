@@ -1,7 +1,7 @@
 .SubHero {
   text-align: center;
   background-color: #010203;
-  padding: 30px;
+  padding: 60px 20px; /* more balanced spacing */
 }
 
 .SubHeroMainTitle {
@@ -20,6 +20,7 @@
 .SubHeroSubTitle {
   font-size: 50px;
   font-weight: 500;
+  line-height: 1.2;
   background: linear-gradient(
     93.85deg,
     #ffffff 39.79%,
@@ -27,4 +28,43 @@
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* ================= Responsive ================= */
+@media (max-width: 1024px) {
+  .SubHeroMainTitle {
+    font-size: 22px;
+  }
+
+  .SubHeroSubTitle {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .SubHero {
+    padding: 40px 15px;
+  }
+
+  .SubHeroMainTitle {
+    font-size: 20px;
+  }
+
+  .SubHeroSubTitle {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .SubHero {
+    padding: 30px 10px;
+  }
+
+  .SubHeroMainTitle {
+    font-size: 18px;
+  }
+
+  .SubHeroSubTitle {
+    font-size: 24px;
+  }
 }

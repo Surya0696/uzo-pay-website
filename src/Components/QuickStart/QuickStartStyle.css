@@ -1,3 +1,87 @@
 .QuickStart-mainDiv {
   background-color: #0a0a0a;
+  padding: 80px 0;
+  color: #fff;
+}
+
+.QuickStart-div {
+  display: flex;
+  align-items: center;
+}
+
+.tagModif {
+  padding: 10px 18px;
+  border-radius: 50px;
+  color: #b5b0b7;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 15px;
+  background: linear-gradient(#000, #000) padding-box,
+    linear-gradient(29.49deg, #101010 2%, #1e7699 138.09%) border-box;
+  border: 1px solid transparent;
+}
+
+.titlesele {
+  font-size: 42px;
+  font-weight: 600;
+  color: #c2c4c8;
+  margin: 15px 0;
+}
+
+.featureSubText {
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffffb2;
+  max-width: 500px;
+}
+
+.QuickStartImg {
+  text-align: center;
+}
+
+.QuickStartImg img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ================= Responsive ================= */
+
+@media (max-width: 992px) {
+  .titlesele {
+    font-size: 32px;
+  }
+  .featureSubText {
+    font-size: 16px;
+  }
+  .QuickStart-mainDiv {
+    padding: 60px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .QuickStart-div {
+    text-align: center;
+  }
+  .titlesele {
+    font-size: 28px;
+  }
+  .featureSubText {
+    font-size: 15px;
+  }
+  .tagModif {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+  .QuickStartImg {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .titlesele {
+    font-size: 24px;
+  }
+  .featureSubText {
+    font-size: 14px;
+  }
 }

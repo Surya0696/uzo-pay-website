@@ -1,12 +1,15 @@
 .TextScrollDiv {
   background-color: #010203;
-  padding: 50px;
+  padding: 80px 30px;
 }
 
 .txtScroll {
   font-size: 90px;
   font-weight: 700;
   color: #fff;
+  line-height: 1.2;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .txtScroll span {
@@ -14,4 +17,37 @@
   opacity: 0;
   text-shadow: 0 0 5px #b388ff, 0 0 10px #b388ff, 0 0 20px #b388ff,
     0 0 40px #b388ff;
+}
+
+/* ================= Responsive ================= */
+@media (max-width: 1200px) {
+  .txtScroll {
+    font-size: 72px;
+  }
+}
+
+@media (max-width: 992px) {
+  .txtScroll {
+    font-size: 54px;
+  }
+}
+
+@media (max-width: 768px) {
+  .TextScrollDiv {
+    padding: 60px 20px;
+  }
+
+  .txtScroll {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .TextScrollDiv {
+    padding: 40px 15px;
+  }
+
+  .txtScroll {
+    font-size: 28px;
+  }
 }

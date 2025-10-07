@@ -5,6 +5,7 @@
   padding: 26px 24px;
   background-color: #010203;
   color: #f9f8fc;
+  position: relative;
 }
 
 .logo {
@@ -12,6 +13,7 @@
   font-weight: 400;
 }
 
+/* Default desktop nav */
 .navLinks {
   display: flex;
   gap: 30px;
@@ -54,4 +56,56 @@
 .signupBtn:hover {
   background-color: #f9f8fc;
   color: #000;
+}
+
+/* ========== MOBILE ========== */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 3px;
+  background-color: #f9f8fc;
+  transition: 0.3s;
+}
+
+/* When menu open */
+.hamburger .line.open:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger .line.open:nth-child(2) {
+  opacity: 0;
+}
+.hamburger .line.open:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Hide nav + buttons on mobile */
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .navLinks.active {
+    display: flex;
+  }
+
+  .authButtons {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
 }

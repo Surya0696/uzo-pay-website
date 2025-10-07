@@ -3,6 +3,12 @@ import { Container, Row, Col } from "react-bootstrap";
 // import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 // import { IoArrowUpOutline } from "react-icons/io5";
 import "./FooterStyle.css";
+import {
+  ArrowUpCircle,
+  Facebook,
+  Instagram,
+  Twitter,
+} from "react-bootstrap-icons";
 
 const Footer = () => {
   return (
@@ -19,17 +25,32 @@ const Footer = () => {
               Optimize your checkout process and boost customer satisfaction
               easily.
             </p>
-            {/* <div className="footer-social mt-3">
-              <a href="#" aria-label="Facebook">
-                <FaFacebookF />
+            <div className="footer-social mt-3">
+              <a
+                href="https://facebook.com"
+                aria-label="Facebook"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Facebook size={20} />
               </a>
-              <a href="#" aria-label="Twitter">
-                <FaTwitter />
+              <a
+                href="https://x.com"
+                aria-label="Twitter (X)"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Twitter size={20} />
               </a>
-              <a href="#" aria-label="Instagram">
-                <FaInstagram />
+              <a
+                href="https://instagram.com"
+                aria-label="Instagram"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Instagram size={20} />
               </a>
-            </div> */}
+            </div>
           </Col>
 
           {/* Payment */}
@@ -103,15 +124,19 @@ const Footer = () => {
             <small>© 2025 UzOPay</small>
           </Col>
           <Col md={6} className="text-center text-md-end">
-            <a href="#" className="me-3">
+            <span href="#" className="me-3" style={{ color: "FFFFFFB2" }}>
               Terms of Service
-            </a>
-            <a href="#" className="me-3">
+            </span>
+            <span href="#" className="me-3" style={{ color: "FFFFFFB2" }}>
               Privacy Policy
+            </span>
+            <a
+              href="#top"
+              className="scroll-top-btn"
+              aria-label="Scroll to top"
+            >
+              <ArrowUpCircle size={22} />
             </a>
-            {/* <a href="#top" className="scroll-top-btn">
-              <IoArrowUpOutline />
-            </a> */}
           </Col>
         </Row>
       </Container>
