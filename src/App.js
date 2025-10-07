@@ -1,6 +1,7 @@
 import "./App.css";
 import CardsSection from "./Components/CardsSection/CardsSection";
 import FnanceSel from "./Components/FnanceSel/FnanceSel";
+import Footer from "./Components/Footer/Footer";
 import GridBoxSel from "./Components/GridBoxSel/GridBoxSel";
 import Hero from "./Components/Hero/Hero";
 import NavBar from "./Components/NavBar/NavBar";
@@ -22,7 +23,8 @@ function App() {
       <GridBoxSel />
       <QuickStart />
       <PaymentGateway />
-      <FnanceSel/>
+      <FnanceSel />
+      <Footer />
     </div>
   );
 }

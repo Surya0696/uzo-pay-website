@@ -3,9 +3,10 @@
   font-weight: 600;
   color: #c2c4c8;
 }
-/* .FnanceSel-mainDiv{
-
-} */
+.FnanceSel-mainOuter {
+  background-color: #0a0a0a;
+  padding: 30px 20px;
+}
 
 .glow-btn-sel-div {
   float: right;
