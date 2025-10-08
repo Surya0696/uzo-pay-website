@@ -11,7 +11,7 @@ import QuickStart from "./Components/QuickStart/QuickStart";
 import SubHero from "./Components/SubHero/SubHero";
 import TestMonialSection from "./Components/TestMonialSection/TestMonialSection";
 import TextScroll from "./Components/TextScroll/TextScroll";
-// import VideoBgSel from "./Components/VideoBgSel/VideoBgSel";
+import VideoBgSel from "./Components/VideoBgSel/VideoBgSel";
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
       <CardsSection />
       <TextScroll />
       <PayoutSection />
-      {/* <VideoBgSel /> */}
+      <VideoBgSel />
       <GridBoxSel />
       <QuickStart />
       <PaymentGateway />

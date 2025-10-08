@@ -1,58 +1,67 @@
-body, html {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  min-height: 100vh;
-  overflow-x: hidden;
+/* src/components/VideoBgSelStyle.css */
+
+:root {
+  --vs-text-color: #e6f1ff;
+  --vs-overlay: rgba(0, 10, 20, 0.55);
 }
 
-.container {
+.vs-hero {
   position: relative;
   width: 100%;
-  min-height: 200vh; /* enough height for scroll animation */
+  height: 100svh; /* mobile-friendly viewport height */
   overflow: hidden;
+  background: #000;
 }
 
-video {
-  position: fixed;
-  top: 0;
-  left: 0;
+.vs-bg {
+  position: fixed; /* stays fixed behind as we pin the section */
+  inset: 0;
+  z-index: 0;
+}
+
+.vs-bg-media {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1;
+  filter: saturate(1.05) contrast(1.05);
 }
 
-.mask {
+.vs-overlay {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
+  background: var(--vs-overlay); /* darken for text readability */
+}
+
+.vs-center {
+  position: relative;
+  z-index: 1; /* above background */
   width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  mix-blend-mode: screen;
-  pointer-events: none;
-  z-index: 2;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 0 4vw;
+  text-align: center;
 }
 
-.mask h2 {
-  font-size: 10vw;
-  color: #fff;
+.vs-title {
   margin: 0;
-  white-space: nowrap;
-  transition: transform 0.2s ease;
-}
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
+    "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  line-height: 0.9;
+  color: var(--vs-text-color);
+  text-shadow: 0 8px 28px rgba(0, 0, 0, 0.5);
+  font-size: clamp(3rem, 12vw, 10rem);
+  /* Optional: image-in-text look using background-clip */
+  /* background-image: url("/assets/videoBg.svg"); */
 
-@media (max-width: 768px) {
-  .mask h2 {
-    font-size: 15vw;
-  }
-}
-
-@media (max-width: 480px) {
-  .mask h2 {
-    font-size: 20vw;
-  }
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
