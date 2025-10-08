@@ -97,22 +97,19 @@ const Footer = () => {
             </ul>
           </Col>
           <Col md={2} sm={6} className="mb-4">
-            <h6 className="footer-heading">All Banking</h6>
+            <h6 className="footer-heading">Company</h6>
             <ul className="footer-links">
               <li>
-                <a href="#">Current Account</a>
+                <a href="#">About us</a>
               </li>
               <li>
-                <a href="#">Accounting</a>
+                <a href="#">Contact us</a>
               </li>
               <li>
-                <a href="#">API Banking</a>
+                <a href="#">Cards</a>
               </li>
               <li>
-                <a href="#">UPI Autopay</a>
-              </li>
-              <li>
-                <a href="#">Tax Payment</a>
+                <a href="#">CMS</a>
               </li>
             </ul>
           </Col>
