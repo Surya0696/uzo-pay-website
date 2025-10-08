@@ -10,9 +10,9 @@ const tabContent = {
     description:
       "Our payment gateway simplifies transactions for e-commerce businesses, delivering fast and secure processing. With smooth integration, we enhance your store's payment capabilities. Optimize your checkout process and boost customer satisfaction easily.",
     features: [
-      "📧 Optimize Your Checkout",
-      "📊 Fast and Secure",
-      "💬 Smooth Integration",
+      { icon: "/Assets/msgIcon1.svg", text: "Optimize Your Checkout" },
+      { icon: "/Assets/msgIcon2.svg", text: "Fast and Secure" },
+      { icon: "/Assets/msgIcon3.svg", text: "Smooth Integration" },
     ],
   },
   Payout: {
@@ -20,9 +20,9 @@ const tabContent = {
     description:
       "Automate and manage your business payouts efficiently with our comprehensive payout solution. Handle vendor payments, affiliate commissions, and employee reimbursements seamlessly.",
     features: [
-      "⚡ Instant Transfers",
-      "🔒 Secure Processing",
-      "📊 Real-time Tracking",
+      { icon: "/Assets/msgIcon1.svg", text: "Optimize Your Checkout" },
+      { icon: "/Assets/msgIcon2.svg", text: "Fast and Secure" },
+      { icon: "/Assets/msgIcon3.svg", text: "Smooth Integration" },
     ],
   },
   Payroll: {
@@ -30,9 +30,9 @@ const tabContent = {
     description:
       "Manage employee salaries, taxes, and benefits with our automated payroll system. Ensure compliance and accuracy while saving time on administrative tasks.",
     features: [
-      "💼 Automated Processing",
-      "📋 Tax Compliance",
-      "📈 Detailed Reports",
+      { icon: "/Assets/msgIcon1.svg", text: "Optimize Your Checkout" },
+      { icon: "/Assets/msgIcon2.svg", text: "Fast and Secure" },
+      { icon: "/Assets/msgIcon3.svg", text: "Smooth Integration" },
     ],
   },
   "AI Banking": {
@@ -40,9 +40,9 @@ const tabContent = {
     description:
       "Leverage AI-powered banking features for smart financial management. Get insights, predictions, and automated recommendations for your business finances.",
     features: [
-      "🤖 AI-Driven Insights",
-      "📊 Predictive Analytics",
-      "🎯 Smart Recommendations",
+      { icon: "/Assets/msgIcon1.svg", text: "Optimize Your Checkout" },
+      { icon: "/Assets/msgIcon2.svg", text: "Fast and Secure" },
+      { icon: "/Assets/msgIcon3.svg", text: "Smooth Integration" },
     ],
   },
 };
@@ -54,7 +54,7 @@ const PaymentGateway = () => {
   return (
     <div className="feature-card">
       <div className="feature-card-innerDiv">
-        {/* Tab Header */}
+        {/* Tabs */}
         <div className="tabsDiv" role="tablist">
           <span className="tabsMainDiv">
             {tabs.map((tab) => (
@@ -64,9 +64,7 @@ const PaymentGateway = () => {
                 onClick={() => setActiveTab(tab)}
                 role="tab"
                 aria-selected={activeTab === tab}
-                aria-controls={`panel-${tab
-                  .replace(/\s+/g, "-")
-                  .toLowerCase()}`}
+                aria-controls={`panel-${tab.replace(/\s+/g, "-").toLowerCase()}`}
               >
                 {tab}
               </button>
@@ -74,6 +72,7 @@ const PaymentGateway = () => {
           </span>
         </div>
 
+        {/* Panel */}
         <div
           className="feature-content"
           role="tabpanel"
@@ -87,14 +86,25 @@ const PaymentGateway = () => {
                   <p>{currentContent.description}</p>
 
                   <ul className="features-list">
-                    {currentContent.features.map((feature, index) => (
-                      <li key={index}>{feature}</li>
+                    {currentContent.features.map((f, i) => (
+                      <li key={i} className="feature-item">
+                        {f.icon && (
+                          <img
+                            src={f.icon}
+                            alt=""
+                            className="feature-icon"
+                            loading="lazy"
+                          />
+                        )}
+                        <span>{f.text}</span>
+                      </li>
                     ))}
                   </ul>
 
                   <button className="glow-btn-sel">Get Started</button>
                 </div>
               </Col>
+
               <Col lg={6} md={6} sm={12}>
                 <div className="feature-right">
                   <img
